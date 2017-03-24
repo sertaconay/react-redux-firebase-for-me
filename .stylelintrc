@@ -1,0 +1,37 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order",
+    "stylelint-declaration-use-variable"
+  ],
+  "rules": {
+    "order/declaration-block-properties-specified-order": [
+      "position",
+      "display",
+      "flex",
+      "background",
+      "color",
+      "top", "right", "bottom", "left",
+      "outline",
+      "margin", "margin-top", "margin-right", "margin-bottom", "margin-left",
+      "border",
+      "padding", "padding-top", "padding-right", "padding-bottom", "padding-left",
+      "width", "max-width", "min-width",
+      "height", "max-height", "min-height",
+      "overflow"
+    ],
+    "order/declaration-block-order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "rules",
+      "at-rules"
+    ],
+    "sh-waqar/declaration-use-variable": "/colorcolor/",
+    "max-nesting-depth": 3,
+    "max-empty-lines": 2,
+    "color-hex-case": "upper",
+    "unit-blacklist": "pxpx"
+  }
+}

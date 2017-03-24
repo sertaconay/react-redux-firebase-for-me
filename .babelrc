@@ -1,0 +1,33 @@
+{
+    "presets": [
+        [
+            "latest",
+            {
+                "es2015": {
+                    "loose": true,
+                    "modules": false
+                }
+            }
+        ],
+        "stage-0",
+        "react",
+        "airbnb"
+    ],
+    "env": {
+        "development": {
+            "presets": [
+                "react-hmre"
+            ],
+            "plugins": ["transform-decorators-legacy", "transform-class-properties", "transform-runtime"]
+        },
+        "production": {
+            "plugins": [
+                "transform-decorators-legacy",
+                "transform-class-properties",
+                "transform-react-constant-elements",
+                "transform-react-remove-prop-types",
+                "transform-react-inline-elements"
+            ]
+        }
+    }
+}

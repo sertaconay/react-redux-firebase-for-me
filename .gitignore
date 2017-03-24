@@ -1,0 +1,27 @@
+# jetbrains
+.idea
+
+# c9 ide
+.c9
+
+# node
+node_modules
+npm-debug.log*
+
+# yarn
+yarn-error.log*
+
+# sass
+.sass-cache
+
+# editorconfig
+.editorconfig
+
+# mac
+.DS_Store
+
+ # app
+public
+
+# visual studio code
+.vscode
