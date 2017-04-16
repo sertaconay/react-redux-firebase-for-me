@@ -1,0 +1,15 @@
+{
+    "rules": {
+        ".read": false,
+        ".write": false,
+        "admins": {
+            ".read": "auth != null && root.child('admins').hasChild(auth.uid)",
+            ".write": false
+        },
+        "home": {
+            ".read": true,
+            ".write": "auth != null && root.child('admins').hasChild(auth.uid)",
+            ".indexOn": "slug"
+        },
+    }
+}
